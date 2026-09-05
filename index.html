@@ -105,7 +105,7 @@ figure.ph time { display:block; font-size:11px; letter-spacing:.08em; color:var(
 .badge { position:absolute; bottom:8px; left:8px; background:rgba(163,18,7,.72); color:#FFF8E6; font-size:9px; font-weight:800;
   padding:2px 7px; border-radius:99px; z-index:2; letter-spacing:.02em; max-width:72%; white-space:nowrap; overflow:hidden;
   text-overflow:ellipsis; pointer-events:none }
-a.pl .plk.rl ~ .badge, a.pl:has(.plk.rl) .badge { bottom:31px }
+
 
 /* why-list */
 .why { list-style:none; margin:28px 0 0; padding:0; display:grid; gap:12px }
@@ -135,7 +135,10 @@ a.pl:hover img { filter:brightness(1.04) }
 a.pl .plk { position:absolute; right:6px; bottom:6px; width:20px; height:20px; line-height:20px; text-align:center;
   font-size:11px; font-weight:800; background:rgba(34,26,6,.55); color:#FFF8E6; border-radius:50%;
   pointer-events:none; font-family:system-ui,sans-serif; opacity:.8; padding:0; letter-spacing:0 }
-a.pl .plk.rl { left:6px; right:auto; font-size:8.5px; text-indent:1px }
+a.pl .plk.rl { left:50%; top:50%; right:auto; bottom:auto; transform:translate(-50%,-50%);
+  width:46px; height:46px; line-height:46px; font-size:17px; text-indent:3px;
+  background:rgba(20,14,4,.42); border:1.5px solid rgba(255,248,230,.85); opacity:.92 }
+.wall a.pl .plk.rl { width:30px; height:30px; line-height:30px; font-size:11px; text-indent:2px }
 figure.ph a.pl .plk { right:6px; bottom:6px }
 .wall a.pl .plk { width:15px; height:15px; line-height:15px; font-size:8px; right:4px; bottom:4px; padding:0 }
 .linknote { background:var(--card); border:1px dashed var(--line); border-radius:10px; padding:10px 14px;
